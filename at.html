@@ -4,226 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>آت: خدمة معرفة تفاصيل الحضور والإنصراف لموظّفي منشأتِك عبر التحليل الذكيّ للكاميرات التي لديك!</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="styles/main.css?version=0.1">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet" />
-    <!-- TODO: Add Google Analytics -->
-    <style type="text/css">
-        * {
-            font-family: 'IBM Plex Sans Arabic', sans-serif;
-            margin: 0; padding: 0; box-sizing: border-box;
-        }
-        h1 {
-            padding-bottom: 20px;
-            border-bottom: 1px solid black;
-            margin-top: 0; font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: Crimson;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 26px;
-        }
-        @media (max-width: 990px) {
-            h1 {
-                font-size: 24px;
-            }
-            h2 {
-                font-size: 22px;
-            }
-        }
-        label, input, p, button {
-            font-size: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 20px;
-        }
-        .subscription {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            /*gap: 10px;*/
-        }
-        input, button {
-            border: 0;
-            -webkit-appearance: none;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 5px;
-            text-align: center;
-            /*width: 100%; max-width: 100%;*/
-            /*width: 100%;*/
-        }
-        input {
-            direction: lrt;
-            max-width: 100%;
-            flex-grow: 2;
-        }
-        button {
-            background-color: Crimson;
-            color: white;
-            font-weight: 500;
-            cursor: pointer;
-            flex-grow: 1;
-            max-width: 100%;
-        }
-
-        .hero {
-            background-color: MediumSpringGreen;
-            min-height: 60vh;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-        .container {
-            width: 80vw;
-            text-align: center;
-        }
-        @media (min-width: 990px) {
-            .container {
-                width: 40vw;
-            }
-        }
-        .trusted-by, .call-us {
-            background: black;
-            height: 40vh;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .main-features {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .main-feature {
-            display: flex;
-            align-items: center;
-            column-gap: 20px;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin-top: 20px;
-            border-bottom: 1px solid Gainsboro;
-        }
-        @media (max-width: 990px) {
-            .main-feature {
-                flex-wrap: wrap;
-            }
-        }
-
-        .reverse {
-            flex-direction: row-reverse;
-        }
-
-        .main-feature:last-child {
-            border-bottom: 0;
-        }
-
-        .main-feature .content {
-
-        }
-
-        .main-feature .visual {
-
-        }
-
-        .main-feature img {
-            height: 150px;
-        }
-        .trusted-by h1, .call-us h1 {
-            color: white;
-            border-color: white;
-        }
-
-        .call-us .number {
-            direction: ltr;
-            border-bottom: 0;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        .call-us .number a {
-            color: MediumSpringGreen;
-        }
-
-        .companies {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-items: center;
-            gap:  1em;
-            list-style: none;
-        }
-        .companies img {
-            /*width: 25%;*/
-            height: 20px;
-        }
-
-        input[type="email"], input[type="submit"] {
-            /*margin-bottom: 10px;*/
-            /*height: 40px;*/
-            /*padding: 0;*/
-        }
-
-        footer {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        footer .sides {
-            display: flex;
-            align-items: center;
-            column-gap: 20px;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-        }
-        footer a {
-            display: inline-block;
-            margin-right: 10px;
-            color: black;
-        }
-
-        /*.hero {
-            pointer-events: none;
-        }
-        input[type="email"] {
-            pointer-events: auto;
-        }
-        .hero:hover{
-            background-image: url('https://lordswaglington.github.io/MemeChan-2.0/images/stripes.gif');
-            background-size: cover; background-repeat: no-repeat;
-        }*/
-    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ51MX99HG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XZ51MX99HG');
+    </script>
+    <script src="scripts/main.js"></script>
 </head>
 <body>
 
@@ -232,18 +25,13 @@
         <h1>
             آت: خدمة معرفة تفاصيل الحضور والإنصراف لموظّفي منشأتِك عبر التحليل الذكيّ للكاميرات التي لديك!
         </h1>
-        <p class="success">
-            شكرًا لك على اهتمامك! وسنتواصل معك قريبًا!
-        </p>
-        <p class="failure">
-            حدث خطا ما!
-        </p>
         <div class="cta">
-            <form>
+            <form action="https://tech.us5.list-manage.com/subscribe/post-json?u=49fa0e37fe55b405cae25158f&id=61097667f7&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
                 <label for="email">أدخِل بريدك الإلكترونيّ لنخبرك بإطلاق الخدمة:</label>
                 <div class="subscription">
-                    <input type="email" name="email" placeholder="بريدك الإلكترونيّ" autocomplete="off" />
-                    <button>أخبرني بإطلاق الخدمة!</button>
+                    <input type="hidden" name="b_49fa0e37fe55b405cae25158f_61097667f7" value="">
+                    <input type="email" id="email" name="EMAIL" placeholder="بريدك الإلكترونيّ" autocomplete="off" />
+                    <button type="submit" name="subscribe" id="subscribe">أخبرني بإطلاق الخدمة!</button>
                 </div>
             </form>
         </div>
@@ -256,10 +44,10 @@
             تقنياتٌ تستخدمها وتثق بها كُبرى شركات العالم.
         </h1>
         <div class="companies">
-            <img src="Sony.svg" alt="Sony" />
-            <img src="Oracle.svg" alt="Oracle" />
-            <img src="McDonald's.svg" alt="McDonald's" />
-            <img src="Honda.svg" alt="Honda" />
+            <img src="images/companies/sony.svg" alt="Sony" />
+            <img src="images/companies/oracle.svg" alt="Oracle" />
+            <img src="images/companies/mcdonalds.svg" alt="McDonald's" />
+            <img src="images/companies/honda.svg" alt="Honda" />
         </div>
     </div>
 </section>
@@ -268,7 +56,7 @@
     <div class="container">
         <div class="main-feature">
             <div class="visual">
-                <img src="undraw_Done_re_oak4.svg" />
+                <img src="images/ease-of-setup-and-usage.svg" />
             </div>
             <div class="content">
                 <h2>سهولة الإعداد والاستخدام.</h2>
@@ -279,7 +67,7 @@
         </div>
         <div class="main-feature reverse">
             <div class="visual">
-                <img src="undraw_Design_notes_re_eklr.svg" />
+                <img src="images/reports-and-alerts.svg" />
             </div>
             <div class="content">
                 <h2>تقارير وتنبيهات حسب الطلب.</h2>
@@ -290,7 +78,7 @@
         </div>
         <div class="main-feature">
             <div class="visual">
-                <img src="undraw_New_notifications_re_xpcv.svg" />
+                <img src="images/free-trial.svg" />
             </div>
             <div class="content">
                 <h2>تجربة مجّانيّة وإلغاء فوري.</h2>
@@ -301,7 +89,7 @@
         </div>
         <div class="main-feature reverse">
             <div class="visual">
-                <img src="undraw_Chatting_re_j55r.svg" />
+                <img src="images/quick-support.svg" />
             </div>
             <div class="content">
                 <h2>دعم على مدار الساعة 24/7.</h2>
@@ -347,8 +135,6 @@
         </div>
     </div>
 </footer>
-
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/49fa0e37fe55b405cae25158f/54b5121c18fa91723e1b5c287.js");</script>
 
 <!-- AlpineJS Library -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script> -->

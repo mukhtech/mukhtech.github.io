@@ -1,0 +1,202 @@
+* {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    margin-top: 0; font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: Crimson;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+@media (max-width: 990px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+}
+
+label, input, p, button {
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.subscription {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input, button {
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+input {
+    direction: lrt;
+    max-width: 100%;
+    flex-grow: 2;
+}
+
+button {
+    background-color: Crimson;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+button:disabled, button[disabled] {
+    background-color: gray;
+    color:  silver;
+}
+
+.hero {
+    background-color: MediumSpringGreen;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container {
+    width: 80vw;
+    text-align: center;
+}
+
+@media (min-width: 990px) {
+    .container {
+        width: 40vw;
+    }
+}
+
+.trusted-by, .call-us {
+    background: black;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-features {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-feature {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid Gainsboro;
+}
+
+@media (max-width: 990px) {
+    .main-feature {
+        flex-wrap: wrap;
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.main-feature:last-child {
+    border-bottom: 0;
+}
+
+.main-feature img {
+    height: 150px;
+}
+.trusted-by h1, .call-us h1 {
+    color: white;
+    border-color: white;
+}
+
+.call-us .number {
+    direction: ltr;
+    border-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.call-us .number a {
+    color: MediumSpringGreen;
+}
+
+.companies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:  1em;
+    list-style: none;
+}
+.companies img {
+    height: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+footer .sides {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+footer a {
+    display: inline-block;
+    margin-right: 10px;
+    color: black;
+}
+
