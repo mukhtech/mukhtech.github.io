@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-    color: Crimson;
+    color: crimson;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 26px;
@@ -59,7 +59,7 @@ input {
 }
 
 button {
-    background-color: Crimson;
+    background-color: crimson;
     color: white;
     font-weight: 500;
     cursor: pointer;
@@ -73,7 +73,7 @@ button:disabled, button[disabled] {
 }
 
 .hero {
-    background-color: MediumSpringGreen;
+    background-color: mediumspringgreen;
     min-height: 60vh;
     display: flex;
     align-items: center;
@@ -162,7 +162,7 @@ a:hover {
 }
 
 .call-us .number a {
-    color: MediumSpringGreen;
+    color: mediumspringgreen;
 }
 
 .companies {
@@ -205,24 +205,22 @@ footer a {
     bottom: 40px;
     left: 10%;
     right: 10%;
-    width: 80%;
-    padding: 5px 14px;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #181b1d;
+    background-color: dimgray;
     color: white;
     border-radius: 5px;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cookie-banner p {
+    font-size: 16px;
 }
 
 .close {
-  height: 4rem;
-  border: none;
   color: white;
   border-radius: 2px;
   cursor: pointer;
-  background-color: transparent;
+  font-size: 16px;
 }
-
-

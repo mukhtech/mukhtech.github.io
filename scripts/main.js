@@ -1,11 +1,13 @@
 $(function () {
+
   if (localStorage.getItem("cookieSeen") !== "shown") {
     $(".cookie-banner").delay(1000).fadeIn();
-    localStorage.setItem("cookieSeen", "shown");
   }
 
-  $(".close").click(function (e) {
+  $(".close").click(function (event) {
+    event.preventDefault();
     $(".cookie-banner").fadeOut();
+    localStorage.setItem("cookieSeen", "shown");
   });
 
   $("#mc-embedded-subscribe-form").submit(function (event) {
@@ -43,6 +45,10 @@ $(function () {
           alert(errormsg);
         } else {
           alert("شكرًا لك على اهتمامك! وسنتواصل معك قريبًا!");
+          dataLayer.push({
+            'event': 'subscribe',
+            'email': $('#email').val(),
+          });
         }
         $("#subscribe").prop("disabled", false);
       },
